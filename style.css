@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+.wrapper {
+  width: 500px;
+  background-color: rgb(58, 155, 240);
+  padding: 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.wrapper form {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  text-align: center;
+  cursor: pointer;
+}
+.wrapper form input {
+  display: none;
+}
+.wrapper form .content i {
+  color: rgb(58, 155, 240);
+  font-size: 4rem;
+}
+.wrapper form .content p {
+  font-size: 2rem;
+}
+.wrapper form img {
+  max-width: 25rem;
+  width: 100%;
+  display: none;
+}
+
+.wrapper .details {
+  display: none;
+  margin-top: 2.5rem;
+}
+.wrapper .details textarea {
+  width: 100%;
+  min-height: 15rem;
+  padding: 5px;
+}
+.wrapper .btns {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.btn {
+  font-size: 1.6rem;
+  padding: 1.4rem 2rem;
+  background-color: white;
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  width: 100%;
+}
+.btn:hover {
+  background-color: rgb(38, 103, 160);
+  color: white;
+}
+
+/* active */
+.wrapper.active form .content {
+  display: none;
+}
+.wrapper.active form img {
+  display: block;
+}
+.wrapper.active .details {
+  display: block;
+}
